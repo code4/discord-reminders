@@ -5,12 +5,31 @@
 
   "events": [
     {
-      "_comment": "Bear 1 — fires every 2 days starting 2026-05-20 at 18:55 UTC (5 min before 19:00 start)",
-      "id": "bear1",
+      "_comment": "Bear 1 — 30 min warning at 18:30 UTC (fires every 2 days from 2026-05-20)",
+      "id": "bear1_30min",
       "name": "Bear 1",
       "enabled": true,
       "webhook_env": "DISCORD_WEBHOOK_URL",
-      "role_mention": "<@&REPLACE_WITH_BEAR_ROLE_ID>",
+      "role_mention": "<@&1495396728009003220>",
+      "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! Prepare your troops. 🐻",
+      "minutes_before": 30,
+      "timezone": "UTC",
+      "extra_vars": {},
+      "schedule": {
+        "type": "every_n_days",
+        "interval": 2,
+        "start_date": "2026-05-20",
+        "time": "18:30"
+      }
+    },
+
+    {
+      "_comment": "Bear 1 — 5 min warning at 18:55 UTC (fires every 2 days from 2026-05-20)",
+      "id": "bear1_5min",
+      "name": "Bear 1",
+      "enabled": true,
+      "webhook_env": "DISCORD_WEBHOOK_URL",
+      "role_mention": "<@&1495396728009003220>",
       "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! Get your troops ready. 🐻",
       "minutes_before": 5,
       "timezone": "UTC",
@@ -24,12 +43,31 @@
     },
 
     {
-      "_comment": "Bear 2 — fires every 2 days starting 2026-05-21 at 01:55 UTC (offset by 1 day from Bear 1)",
-      "id": "bear2",
+      "_comment": "Bear 2 — 30 min warning at 00:00 UTC (fires every 2 days from 2026-05-21)",
+      "id": "bear2_30min",
       "name": "Bear 2",
       "enabled": true,
       "webhook_env": "DISCORD_WEBHOOK_URL",
-      "role_mention": "<@&REPLACE_WITH_BEAR_ROLE_ID>",
+      "role_mention": "<@&1495397421994475682>",
+      "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! Prepare your troops. 🐻",
+      "minutes_before": 30,
+      "timezone": "UTC",
+      "extra_vars": {},
+      "schedule": {
+        "type": "every_n_days",
+        "interval": 2,
+        "start_date": "2026-05-21",
+        "time": "00:00"
+      }
+    },
+
+    {
+      "_comment": "Bear 2 — 5 min warning at 00:25 UTC (fires every 2 days from 2026-05-21)",
+      "id": "bear2_5min",
+      "name": "Bear 2",
+      "enabled": true,
+      "webhook_env": "DISCORD_WEBHOOK_URL",
+      "role_mention": "<@&1495397421994475682>",
       "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! Get your troops ready. 🐻",
       "minutes_before": 5,
       "timezone": "UTC",
@@ -38,24 +76,24 @@
         "type": "every_n_days",
         "interval": 2,
         "start_date": "2026-05-21",
-        "time": "01:55"
+        "time": "00:25"
       }
     },
 
     {
-      "_comment": "Arena — fires every day at 18:55 UTC",
+      "_comment": "Arena — 30 min warning before 12:00 UTC daily reset",
       "id": "arena",
       "name": "Arena",
       "enabled": true,
       "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
-      "role_mention": "<@&REPLACE_WITH_ARENA_ROLE_ID>",
-      "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! Report to battle. ⚔️",
-      "minutes_before": 5,
+      "role_mention": "<@&1444755086596116533>",
+      "message_template": "{role} **{event_name}** resets in {minutes_before} minutes! ⚔️",
+      "minutes_before": 30,
       "timezone": "UTC",
       "extra_vars": {},
       "schedule": {
         "type": "daily",
-        "time": "18:55"
+        "time": "11:30"
       }
     },
 
