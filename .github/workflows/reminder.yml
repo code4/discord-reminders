@@ -49,9 +49,8 @@ jobs:
           # ── Add one entry per unique webhook_env value used in events.json ──
           # Each must be added as a GitHub Actions secret in:
           # Settings → Secrets and variables → Actions → New repository secret
-          DISCORD_WEBHOOK_BEAR: ${{ secrets.DISCORD_WEBHOOK_BEAR }}
-          DISCORD_WEBHOOK_ARENA: ${{ secrets.DISCORD_WEBHOOK_ARENA }}
-          DISCORD_WEBHOOK_GENERAL: ${{ secrets.DISCORD_WEBHOOK_GENERAL }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          DISCORD_GENERAL_WEBHOOK_URL: ${{ secrets.DISCORD_GENERAL_WEBHOOK_URL }}
           # ── Dry-run flag: 'true' when triggered manually with dry_run=true ──
           DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
         run: npm start
