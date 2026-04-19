@@ -110,7 +110,7 @@
       "extra_vars": {},
       "schedule": {
         "type": "daily",
-        "time": "11:55"
+        "time": "12:05"
       }
     },
 
