@@ -136,19 +136,92 @@
     },
 
     {
-      "_comment": "TEST EVENT — disabled after successful test on 2026-04-19",
-      "id": "test_reminder",
-      "name": "Test Reminder",
-      "enabled": false,
+      "_comment": "DEMO — Bear Hunt Trap 1 30min warning sample",
+      "id": "demo_bear1_30min",
+      "name": "Bear Hunt Trap 1",
+      "enabled": true,
       "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
-      "role_mention": "",
-      "message_template": "✅ Test reminder fired successfully at {time} UTC — scheduler is working!",
-      "minutes_before": 0,
+      "role_mention": "<@&1495396728009003220>",
+      "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! Prepare your troops. 🐻",
+      "minutes_before": 30,
       "timezone": "UTC",
       "extra_vars": {},
       "schedule": {
-        "type": "daily",
-        "time": "12:05"
+        "type": "one_off",
+        "date": "2026-04-19",
+        "time": "12:40"
+      }
+    },
+
+    {
+      "_comment": "DEMO — Bear Hunt Trap 1 5min warning sample",
+      "id": "demo_bear1_5min",
+      "name": "Bear Hunt Trap 1",
+      "enabled": true,
+      "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
+      "role_mention": "<@&1495396728009003220>",
+      "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! Get your troops ready. 🐻",
+      "minutes_before": 5,
+      "timezone": "UTC",
+      "extra_vars": {},
+      "schedule": {
+        "type": "one_off",
+        "date": "2026-04-19",
+        "time": "12:40"
+      }
+    },
+
+    {
+      "_comment": "DEMO — Bear Hunt Trap 2 30min warning sample",
+      "id": "demo_bear2_30min",
+      "name": "Bear Hunt Trap 2",
+      "enabled": true,
+      "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
+      "role_mention": "<@&1495397421994475682>",
+      "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! Prepare your troops. 🐻",
+      "minutes_before": 30,
+      "timezone": "UTC",
+      "extra_vars": {},
+      "schedule": {
+        "type": "one_off",
+        "date": "2026-04-19",
+        "time": "12:40"
+      }
+    },
+
+    {
+      "_comment": "DEMO — Bear Hunt Trap 2 5min warning sample",
+      "id": "demo_bear2_5min",
+      "name": "Bear Hunt Trap 2",
+      "enabled": true,
+      "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
+      "role_mention": "<@&1495397421994475682>",
+      "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! Get your troops ready. 🐻",
+      "minutes_before": 5,
+      "timezone": "UTC",
+      "extra_vars": {},
+      "schedule": {
+        "type": "one_off",
+        "date": "2026-04-19",
+        "time": "12:40"
+      }
+    },
+
+    {
+      "_comment": "DEMO — Arena reminder sample",
+      "id": "demo_arena",
+      "name": "Arena",
+      "enabled": true,
+      "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
+      "role_mention": "<@&1444755086596116533>",
+      "message_template": "{role} **{event_name}** resets in {minutes_before} minutes! ⚔️",
+      "minutes_before": 30,
+      "timezone": "UTC",
+      "extra_vars": {},
+      "schedule": {
+        "type": "one_off",
+        "date": "2026-04-19",
+        "time": "12:40"
       }
     },
 
