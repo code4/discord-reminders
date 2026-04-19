@@ -5,9 +5,9 @@
 
   "events": [
     {
-      "_comment": "Bear 1 — 30 min warning at 18:30 UTC (fires every 2 days from 2026-05-20)",
+      "_comment": "Bear Hunt Trap 1 — 30 min warning (fires every 2 days from 2026-04-20, event at 19:00 UTC)",
       "id": "bear1_30min",
-      "name": "Bear 1",
+      "name": "Bear Hunt Trap 1",
       "enabled": true,
       "webhook_env": "DISCORD_WEBHOOK_URL",
       "role_mention": "<@&1495396728009003220>",
@@ -18,15 +18,15 @@
       "schedule": {
         "type": "every_n_days",
         "interval": 2,
-        "start_date": "2026-05-20",
+        "start_date": "2026-04-20",
         "time": "18:30"
       }
     },
 
     {
-      "_comment": "Bear 1 — 5 min warning at 18:55 UTC (fires every 2 days from 2026-05-20)",
+      "_comment": "Bear Hunt Trap 1 — 5 min warning (fires every 2 days from 2026-04-20, event at 19:00 UTC)",
       "id": "bear1_5min",
-      "name": "Bear 1",
+      "name": "Bear Hunt Trap 1",
       "enabled": true,
       "webhook_env": "DISCORD_WEBHOOK_URL",
       "role_mention": "<@&1495396728009003220>",
@@ -37,15 +37,15 @@
       "schedule": {
         "type": "every_n_days",
         "interval": 2,
-        "start_date": "2026-05-20",
+        "start_date": "2026-04-20",
         "time": "18:55"
       }
     },
 
     {
-      "_comment": "Bear 2 — 30 min warning at 00:00 UTC (fires every 2 days from 2026-05-21)",
+      "_comment": "Bear Hunt Trap 2 — 30 min warning (fires every 2 days from 2026-04-20, event at 00:30 UTC)",
       "id": "bear2_30min",
-      "name": "Bear 2",
+      "name": "Bear Hunt Trap 2",
       "enabled": true,
       "webhook_env": "DISCORD_WEBHOOK_URL",
       "role_mention": "<@&1495397421994475682>",
@@ -56,15 +56,15 @@
       "schedule": {
         "type": "every_n_days",
         "interval": 2,
-        "start_date": "2026-05-21",
+        "start_date": "2026-04-20",
         "time": "00:00"
       }
     },
 
     {
-      "_comment": "Bear 2 — 5 min warning at 00:25 UTC (fires every 2 days from 2026-05-21)",
+      "_comment": "Bear Hunt Trap 2 — 5 min warning (fires every 2 days from 2026-04-20, event at 00:30 UTC)",
       "id": "bear2_5min",
-      "name": "Bear 2",
+      "name": "Bear Hunt Trap 2",
       "enabled": true,
       "webhook_env": "DISCORD_WEBHOOK_URL",
       "role_mention": "<@&1495397421994475682>",
@@ -75,7 +75,7 @@
       "schedule": {
         "type": "every_n_days",
         "interval": 2,
-        "start_date": "2026-05-21",
+        "start_date": "2026-04-20",
         "time": "00:25"
       }
     },
