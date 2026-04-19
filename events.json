@@ -98,6 +98,24 @@
     },
 
     {
+      "_comment": "TEST EVENT — disable after confirming it works",
+      "id": "test_reminder",
+      "name": "Test Reminder",
+      "enabled": true,
+      "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
+      "role_mention": "",
+      "message_template": "✅ Test reminder fired successfully at {time} UTC — scheduler is working!",
+      "minutes_before": 0,
+      "timezone": "UTC",
+      "extra_vars": {},
+      "schedule": {
+        "type": "one_off",
+        "date": "2026-04-19",
+        "time": "11:40"
+      }
+    },
+
+    {
       "_comment": "Special one-off event — set enabled:false when not in use",
       "id": "special_event",
       "name": "Alliance Tournament Finals",
