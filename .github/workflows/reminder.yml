@@ -1,29 +1,57 @@
-name: Discord Reminder
+name: Kingshot Reminder Scheduler
 
 on:
   schedule:
-    # 20:05 UTC daily
-    - cron: '5 20 * * *'
-  # Allow manual trigger for testing
+    # Runs every 5 minutes. The script itself decides which events are due.
+    # Note: GitHub Actions cron scheduling can be delayed 5–15 minutes under
+    # heavy load. This is a known platform limitation — see README for details.
+    - cron: '*/5 * * * *'
+
+  # Manual trigger — useful for testing and debugging
   workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run? (logs what would fire without sending to Discord)'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
+
+# Prevent two runs from overlapping.
+# If a previous run is still in progress when the next cron fires, the
+# in-progress run is NOT cancelled — it completes normally. The new run
+# is queued and will execute after. This avoids duplicate sends.
+concurrency:
+  group: reminder-scheduler
+  cancel-in-progress: false
 
 jobs:
   remind:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
+          cache: 'npm'
 
       - name: Install dependencies
         run: npm install
 
-      - name: Run reminder script
+      - name: Run reminder scheduler
         env:
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          DISCORD_GENERAL_WEBHOOK_URL: ${{ secrets.DISCORD_GENERAL_WEBHOOK_URL }}
-        run: node reminder.js
+          # ── Add one entry per unique webhook_env value used in events.json ──
+          # Each must be added as a GitHub Actions secret in:
+          # Settings → Secrets and variables → Actions → New repository secret
+          DISCORD_WEBHOOK_BEAR: ${{ secrets.DISCORD_WEBHOOK_BEAR }}
+          DISCORD_WEBHOOK_ARENA: ${{ secrets.DISCORD_WEBHOOK_ARENA }}
+          DISCORD_WEBHOOK_GENERAL: ${{ secrets.DISCORD_WEBHOOK_GENERAL }}
+          # ── Dry-run flag: 'true' when triggered manually with dry_run=true ──
+          DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
+        run: npm start
