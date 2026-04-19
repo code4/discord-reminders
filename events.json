@@ -98,10 +98,10 @@
     },
 
     {
-      "_comment": "TEST EVENT — disable after confirming it works",
+      "_comment": "TEST EVENT — disabled after successful test on 2026-04-19",
       "id": "test_reminder",
       "name": "Test Reminder",
-      "enabled": true,
+      "enabled": false,
       "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
       "role_mention": "",
       "message_template": "✅ Test reminder fired successfully at {time} UTC — scheduler is working!",
