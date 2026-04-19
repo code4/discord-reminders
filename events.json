@@ -109,9 +109,8 @@
       "timezone": "UTC",
       "extra_vars": {},
       "schedule": {
-        "type": "one_off",
-        "date": "2026-04-19",
-        "time": "11:40"
+        "type": "daily",
+        "time": "12:15"
       }
     },
 
