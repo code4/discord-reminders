@@ -5,6 +5,7 @@ on:
     # Runs once a day at 06:00 UTC to keep the repo active
     # This prevents GitHub from disabling the reminder scheduler cron
     - cron: '0 6 * * *'
+  workflow_dispatch:
 
 jobs:
   keepalive:
