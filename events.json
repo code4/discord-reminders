@@ -5,7 +5,43 @@
 
   "events": [
     {
-      "_comment": "Bear Hunt Trap 1 — 30 min warning (fires every 2 days from 2026-04-20, event at 19:00 UTC)",
+      "_comment": "Bear Hunt Trap 1 — ONE-OFF 30 min warning, event at 19:45 UTC on 2026-04-20",
+      "id": "bear1_oneoff_30min",
+      "name": "Bear Hunt Trap 1",
+      "enabled": true,
+      "webhook_env": "DISCORD_WEBHOOK_URL",
+      "role_mention": "<@&1495396728009003220>",
+      "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! Prepare your troops. 🐻",
+      "minutes_before": 30,
+      "timezone": "UTC",
+      "extra_vars": {},
+      "schedule": {
+        "type": "one_off",
+        "date": "2026-04-20",
+        "time": "19:15"
+      }
+    },
+
+    {
+      "_comment": "Bear Hunt Trap 1 — ONE-OFF 5 min warning, event at 19:45 UTC on 2026-04-20",
+      "id": "bear1_oneoff_5min",
+      "name": "Bear Hunt Trap 1",
+      "enabled": true,
+      "webhook_env": "DISCORD_WEBHOOK_URL",
+      "role_mention": "<@&1495396728009003220>",
+      "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! Get your troops ready. 🐻",
+      "minutes_before": 5,
+      "timezone": "UTC",
+      "extra_vars": {},
+      "schedule": {
+        "type": "one_off",
+        "date": "2026-04-20",
+        "time": "19:40"
+      }
+    },
+
+    {
+      "_comment": "Bear Hunt Trap 1 — 30 min warning (fires every 2 days from 2026-04-22, event at 19:00 UTC)",
       "id": "bear1_30min",
       "name": "Bear Hunt Trap 1",
       "enabled": true,
@@ -18,13 +54,13 @@
       "schedule": {
         "type": "every_n_days",
         "interval": 2,
-        "start_date": "2026-04-20",
+        "start_date": "2026-04-22",
         "time": "18:30"
       }
     },
 
     {
-      "_comment": "Bear Hunt Trap 1 — 5 min warning (fires every 2 days from 2026-04-20, event at 19:00 UTC)",
+      "_comment": "Bear Hunt Trap 1 — 5 min warning (fires every 2 days from 2026-04-22, event at 19:00 UTC)",
       "id": "bear1_5min",
       "name": "Bear Hunt Trap 1",
       "enabled": true,
@@ -37,7 +73,7 @@
       "schedule": {
         "type": "every_n_days",
         "interval": 2,
-        "start_date": "2026-04-20",
+        "start_date": "2026-04-22",
         "time": "18:55"
       }
     },
