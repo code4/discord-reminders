@@ -262,7 +262,7 @@
     },
 
     {
-      "_comment": "TEST — fires at 18:45 UTC 2026-04-20, disable after",
+      "_comment": "TEST — fires at 09:00 UTC 2026-04-19, disable after",
       "id": "test_18_45",
       "name": "Test Reminder",
       "enabled": true,
@@ -274,8 +274,8 @@
       "extra_vars": {},
       "schedule": {
         "type": "one_off",
-        "date": "2026-04-20",
-        "time": "18:45"
+        "date": "2026-04-19",
+        "time": "09:00"
       }
     },
 
