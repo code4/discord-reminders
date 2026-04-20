@@ -9,7 +9,7 @@
       "id": "bear1_oneoff_30min",
       "name": "Bear Hunt Trap 1",
       "enabled": true,
-      "webhook_env": "DISCORD_WEBHOOK_URL",
+      "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
       "role_mention": "<@&1495396728009003220>",
       "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! Prepare your troops. 🐻",
       "minutes_before": 30,
@@ -27,7 +27,7 @@
       "id": "bear1_oneoff_5min",
       "name": "Bear Hunt Trap 1",
       "enabled": true,
-      "webhook_env": "DISCORD_WEBHOOK_URL",
+      "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
       "role_mention": "<@&1495396728009003220>",
       "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! Get your troops ready. 🐻",
       "minutes_before": 5,
@@ -45,7 +45,7 @@
       "id": "bear1_30min",
       "name": "Bear Hunt Trap 1",
       "enabled": true,
-      "webhook_env": "DISCORD_WEBHOOK_URL",
+      "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
       "role_mention": "<@&1495396728009003220>",
       "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! Prepare your troops. 🐻",
       "minutes_before": 30,
@@ -64,7 +64,7 @@
       "id": "bear1_5min",
       "name": "Bear Hunt Trap 1",
       "enabled": true,
-      "webhook_env": "DISCORD_WEBHOOK_URL",
+      "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
       "role_mention": "<@&1495396728009003220>",
       "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! Get your troops ready. 🐻",
       "minutes_before": 5,
@@ -83,7 +83,7 @@
       "id": "bear2_30min",
       "name": "Bear Hunt Trap 2",
       "enabled": true,
-      "webhook_env": "DISCORD_WEBHOOK_URL",
+      "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
       "role_mention": "<@&1495397421994475682>",
       "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! Prepare your troops. 🐻",
       "minutes_before": 30,
@@ -102,7 +102,7 @@
       "id": "bear2_5min",
       "name": "Bear Hunt Trap 2",
       "enabled": true,
-      "webhook_env": "DISCORD_WEBHOOK_URL",
+      "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
       "role_mention": "<@&1495397421994475682>",
       "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! Get your troops ready. 🐻",
       "minutes_before": 5,
@@ -258,6 +258,24 @@
         "type": "one_off",
         "date": "2026-04-19",
         "time": "15:05"
+      }
+    },
+
+    {
+      "_comment": "TEST — fires at 18:45 UTC 2026-04-20, disable after",
+      "id": "test_18_45",
+      "name": "Test Reminder",
+      "enabled": true,
+      "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
+      "role_mention": "",
+      "message_template": "✅ Reminder system working! Bear Hunt Trap 1 tonight at 19:45 UTC — reminders set for 19:15 and 19:40 UTC.",
+      "minutes_before": 0,
+      "timezone": "UTC",
+      "extra_vars": {},
+      "schedule": {
+        "type": "one_off",
+        "date": "2026-04-20",
+        "time": "18:45"
       }
     },
 
