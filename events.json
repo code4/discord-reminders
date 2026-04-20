@@ -41,7 +41,43 @@
     },
 
     {
-      "_comment": "Bear Hunt Trap 1 — 30 min warning (fires every 2 days from 2026-04-22, event at 19:00 UTC)",
+      "_comment": "Bear Hunt Trap 1 — ONE-OFF 30 min warning, event at 19:20 UTC on 2026-04-22",
+      "id": "bear1_oneoff_30min_apr22",
+      "name": "Bear Hunt Trap 1",
+      "enabled": true,
+      "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
+      "role_mention": "<@&1495396728009003220>",
+      "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! Prepare your troops. 🐻",
+      "minutes_before": 30,
+      "timezone": "UTC",
+      "extra_vars": {},
+      "schedule": {
+        "type": "one_off",
+        "date": "2026-04-22",
+        "time": "18:50"
+      }
+    },
+
+    {
+      "_comment": "Bear Hunt Trap 1 — ONE-OFF 5 min warning, event at 19:20 UTC on 2026-04-22",
+      "id": "bear1_oneoff_5min_apr22",
+      "name": "Bear Hunt Trap 1",
+      "enabled": true,
+      "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
+      "role_mention": "<@&1495396728009003220>",
+      "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! Get your troops ready. 🐻",
+      "minutes_before": 5,
+      "timezone": "UTC",
+      "extra_vars": {},
+      "schedule": {
+        "type": "one_off",
+        "date": "2026-04-22",
+        "time": "19:15"
+      }
+    },
+
+    {
+      "_comment": "Bear Hunt Trap 1 — 30 min warning (fires every 2 days from 2026-04-24, event at 19:00 UTC)",
       "id": "bear1_30min",
       "name": "Bear Hunt Trap 1",
       "enabled": true,
@@ -54,13 +90,13 @@
       "schedule": {
         "type": "every_n_days",
         "interval": 2,
-        "start_date": "2026-04-22",
+        "start_date": "2026-04-24",
         "time": "18:30"
       }
     },
 
     {
-      "_comment": "Bear Hunt Trap 1 — 5 min warning (fires every 2 days from 2026-04-22, event at 19:00 UTC)",
+      "_comment": "Bear Hunt Trap 1 — 5 min warning (fires every 2 days from 2026-04-24, event at 19:00 UTC)",
       "id": "bear1_5min",
       "name": "Bear Hunt Trap 1",
       "enabled": true,
@@ -73,7 +109,7 @@
       "schedule": {
         "type": "every_n_days",
         "interval": 2,
-        "start_date": "2026-04-22",
+        "start_date": "2026-04-24",
         "time": "18:55"
       }
     },
@@ -117,7 +153,7 @@
     },
 
     {
-      "_comment": "Arena — 30 min warning before 12:00 UTC daily reset",
+      "_comment": "Arena — 30 min warning before 00:00 UTC daily reset",
       "id": "arena",
       "name": "Arena",
       "enabled": true,
@@ -129,153 +165,7 @@
       "extra_vars": {},
       "schedule": {
         "type": "daily",
-        "time": "11:30"
-      }
-    },
-
-    {
-      "_comment": "TAC — fires every Monday and Thursday at 19:55 UTC",
-      "id": "tac",
-      "name": "TAC",
-      "enabled": true,
-      "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
-      "role_mention": "<@&REPLACE_WITH_TAC_ROLE_ID>",
-      "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! {strategy}",
-      "minutes_before": 5,
-      "timezone": "UTC",
-      "extra_vars": {
-        "strategy": "Focus on center control. Coordinate with your alliance before engaging."
-      },
-      "schedule": {
-        "type": "weekly",
-        "days": ["Monday", "Thursday"],
-        "time": "19:55"
-      }
-    },
-
-    {
-      "_comment": "KvK — fires every Saturday at 14:55 UTC",
-      "id": "kvk",
-      "name": "KvK",
-      "enabled": true,
-      "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
-      "role_mention": "<@&REPLACE_WITH_KVK_ROLE_ID>",
-      "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! All hands on deck. 🏰",
-      "minutes_before": 5,
-      "timezone": "UTC",
-      "extra_vars": {},
-      "schedule": {
-        "type": "weekly",
-        "days": ["Saturday"],
-        "time": "14:55"
-      }
-    },
-
-    {
-      "_comment": "DEMO — Bear Hunt Trap 1 30min warning sample",
-      "id": "demo_bear1_30min",
-      "name": "Bear Hunt Trap 1",
-      "enabled": true,
-      "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
-      "role_mention": "<@&1495396728009003220>",
-      "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! Prepare your troops. 🐻",
-      "minutes_before": 30,
-      "timezone": "UTC",
-      "extra_vars": {},
-      "schedule": {
-        "type": "one_off",
-        "date": "2026-04-19",
-        "time": "15:05"
-      }
-    },
-
-    {
-      "_comment": "DEMO — Bear Hunt Trap 1 5min warning sample",
-      "id": "demo_bear1_5min",
-      "name": "Bear Hunt Trap 1",
-      "enabled": true,
-      "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
-      "role_mention": "<@&1495396728009003220>",
-      "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! Get your troops ready. 🐻",
-      "minutes_before": 5,
-      "timezone": "UTC",
-      "extra_vars": {},
-      "schedule": {
-        "type": "one_off",
-        "date": "2026-04-19",
-        "time": "15:05"
-      }
-    },
-
-    {
-      "_comment": "DEMO — Bear Hunt Trap 2 30min warning sample",
-      "id": "demo_bear2_30min",
-      "name": "Bear Hunt Trap 2",
-      "enabled": true,
-      "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
-      "role_mention": "<@&1495397421994475682>",
-      "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! Prepare your troops. 🐻",
-      "minutes_before": 30,
-      "timezone": "UTC",
-      "extra_vars": {},
-      "schedule": {
-        "type": "one_off",
-        "date": "2026-04-19",
-        "time": "15:05"
-      }
-    },
-
-    {
-      "_comment": "DEMO — Bear Hunt Trap 2 5min warning sample",
-      "id": "demo_bear2_5min",
-      "name": "Bear Hunt Trap 2",
-      "enabled": true,
-      "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
-      "role_mention": "<@&1495397421994475682>",
-      "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! Get your troops ready. 🐻",
-      "minutes_before": 5,
-      "timezone": "UTC",
-      "extra_vars": {},
-      "schedule": {
-        "type": "one_off",
-        "date": "2026-04-19",
-        "time": "15:05"
-      }
-    },
-
-    {
-      "_comment": "DEMO — Arena reminder sample",
-      "id": "demo_arena",
-      "name": "Arena",
-      "enabled": true,
-      "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
-      "role_mention": "<@&1444755086596116533>",
-      "message_template": "{role} **{event_name}** resets in {minutes_before} minutes! ⚔️",
-      "minutes_before": 30,
-      "timezone": "UTC",
-      "extra_vars": {},
-      "schedule": {
-        "type": "one_off",
-        "date": "2026-04-19",
-        "time": "15:05"
-      }
-    },
-
-    {
-      "_comment": "TEST — fires at 09:00 UTC 2026-04-19, disable after",
-      "id": "test_18_45",
-      "name": "Test Reminder",
-      "enabled": true,
-      "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
-      "role_mention": "",
-      "message_template": "✅ Reminder system working! Bear Hunt Trap 1 tonight at 19:45 UTC — reminders set for 19:15 and 19:40 UTC.",
-      "minutes_before": 0,
-      "timezone": "UTC",
-      "extra_vars": {},
-      "schedule": {
-        "type": "one_off",
-        "date": "2026-04-19",
-        "time": "09:00"
+        "time": "23:30"
       }
     },
 
