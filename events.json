@@ -153,6 +153,42 @@
     },
 
     {
+      "_comment": "Vikings Round 2 — ONE-OFF 45 min warning, event at 19:30 UTC on 2026-04-23",
+      "id": "vikings_r2_45min",
+      "name": "Vikings Round 2",
+      "enabled": true,
+      "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
+      "role_mention": "@everyone",
+      "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! Come online and send your troops to your neighbours.",
+      "minutes_before": 45,
+      "timezone": "UTC",
+      "extra_vars": {},
+      "schedule": {
+        "type": "one_off",
+        "date": "2026-04-23",
+        "time": "18:45"
+      }
+    },
+
+    {
+      "_comment": "Vikings Round 2 — ONE-OFF 30 min warning, event at 19:30 UTC on 2026-04-23",
+      "id": "vikings_r2_30min",
+      "name": "Vikings Round 2",
+      "enabled": true,
+      "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
+      "role_mention": "@everyone",
+      "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! Come online and send your troops to your neighbours.",
+      "minutes_before": 30,
+      "timezone": "UTC",
+      "extra_vars": {},
+      "schedule": {
+        "type": "one_off",
+        "date": "2026-04-23",
+        "time": "19:00"
+      }
+    },
+
+    {
       "_comment": "Arena — 30 min warning before 00:00 UTC daily reset",
       "id": "arena",
       "name": "Arena",
