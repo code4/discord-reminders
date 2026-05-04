@@ -297,6 +297,150 @@
     },
 
     {
+      "_comment": "Cesares Boss 2 — ONE-OFF 30 min warning, event at 15:00 UTC on 2026-05-04",
+      "id": "cesares_boss2_30min_may04",
+      "name": "Cesares Boss 2",
+      "enabled": true,
+      "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
+      "role_mention": "@everyone",
+      "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! ⚠️ First 25 minutes: send only 1 attack, use 1 troop, use no heroes.",
+      "minutes_before": 30,
+      "timezone": "UTC",
+      "extra_vars": {},
+      "schedule": {
+        "type": "one_off",
+        "date": "2026-05-04",
+        "time": "14:30"
+      }
+    },
+
+    {
+      "_comment": "Cesares Boss 2 — ONE-OFF 5 min warning, event at 15:00 UTC on 2026-05-04",
+      "id": "cesares_boss2_5min_may04",
+      "name": "Cesares Boss 2",
+      "enabled": true,
+      "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
+      "role_mention": "@everyone",
+      "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! ⚠️ First 25 minutes: send only 1 attack, use 1 troop, use no heroes.",
+      "minutes_before": 5,
+      "timezone": "UTC",
+      "extra_vars": {},
+      "schedule": {
+        "type": "one_off",
+        "date": "2026-05-04",
+        "time": "14:55"
+      }
+    },
+
+    {
+      "_comment": "Cesares Boss 3 — ONE-OFF 30 min warning, event at 17:00 UTC on 2026-05-04",
+      "id": "cesares_boss3_30min_may04",
+      "name": "Cesares Boss 3",
+      "enabled": true,
+      "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
+      "role_mention": "@everyone",
+      "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! ⚠️ First 25 minutes: send only 1 attack, use 1 troop, use no heroes.",
+      "minutes_before": 30,
+      "timezone": "UTC",
+      "extra_vars": {},
+      "schedule": {
+        "type": "one_off",
+        "date": "2026-05-04",
+        "time": "16:30"
+      }
+    },
+
+    {
+      "_comment": "Cesares Boss 3 — ONE-OFF 5 min warning, event at 17:00 UTC on 2026-05-04",
+      "id": "cesares_boss3_5min_may04",
+      "name": "Cesares Boss 3",
+      "enabled": true,
+      "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
+      "role_mention": "@everyone",
+      "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! ⚠️ First 25 minutes: send only 1 attack, use 1 troop, use no heroes.",
+      "minutes_before": 5,
+      "timezone": "UTC",
+      "extra_vars": {},
+      "schedule": {
+        "type": "one_off",
+        "date": "2026-05-04",
+        "time": "16:55"
+      }
+    },
+
+    {
+      "_comment": "Cesares Boss 4 — ONE-OFF 30 min warning, event at 20:05 UTC on 2026-05-04 (after Bear)",
+      "id": "cesares_boss4_30min_may04",
+      "name": "Cesares Boss 4",
+      "enabled": true,
+      "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
+      "role_mention": "@everyone",
+      "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! 🐻 Stay put after Bear Hunt for Cesares Boss. ⚠️ First 25 minutes: send only 1 attack, use 1 troop, use no heroes.",
+      "minutes_before": 30,
+      "timezone": "UTC",
+      "extra_vars": {},
+      "schedule": {
+        "type": "one_off",
+        "date": "2026-05-04",
+        "time": "19:35"
+      }
+    },
+
+    {
+      "_comment": "Cesares Boss 4 — ONE-OFF 5 min warning, event at 20:05 UTC on 2026-05-04 (after Bear)",
+      "id": "cesares_boss4_5min_may04",
+      "name": "Cesares Boss 4",
+      "enabled": true,
+      "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
+      "role_mention": "@everyone",
+      "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! 🐻 Stay put after Bear Hunt for Cesares Boss. ⚠️ First 25 minutes: send only 1 attack, use 1 troop, use no heroes.",
+      "minutes_before": 5,
+      "timezone": "UTC",
+      "extra_vars": {},
+      "schedule": {
+        "type": "one_off",
+        "date": "2026-05-04",
+        "time": "20:00"
+      }
+    },
+
+    {
+      "_comment": "Cesares Boss 5 — ONE-OFF 30 min warning, event at 22:00 UTC on 2026-05-04",
+      "id": "cesares_boss5_30min_may04",
+      "name": "Cesares Boss 5",
+      "enabled": true,
+      "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
+      "role_mention": "@everyone",
+      "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! ⚠️ First 25 minutes: send only 1 attack, use 1 troop, use no heroes.",
+      "minutes_before": 30,
+      "timezone": "UTC",
+      "extra_vars": {},
+      "schedule": {
+        "type": "one_off",
+        "date": "2026-05-04",
+        "time": "21:30"
+      }
+    },
+
+    {
+      "_comment": "Cesares Boss 5 — ONE-OFF 5 min warning, event at 22:00 UTC on 2026-05-04",
+      "id": "cesares_boss5_5min_may04",
+      "name": "Cesares Boss 5",
+      "enabled": true,
+      "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
+      "role_mention": "@everyone",
+      "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! ⚠️ First 25 minutes: send only 1 attack, use 1 troop, use no heroes.",
+      "minutes_before": 5,
+      "timezone": "UTC",
+      "extra_vars": {},
+      "schedule": {
+        "type": "one_off",
+        "date": "2026-05-04",
+        "time": "21:55"
+      }
+    },
+
+    {
       "_comment": "Arena — 30 min warning before 00:00 UTC daily reset",
       "id": "arena",
       "name": "Arena",
