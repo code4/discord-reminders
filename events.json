@@ -441,6 +441,78 @@
     },
 
     {
+      "_comment": "Sanctuary — ONE-OFF 30 min warning, event at 14:00 UTC on 2026-05-08",
+      "id": "sanctuary_oneoff_30min_may08_14",
+      "name": "Sanctuary",
+      "enabled": true,
+      "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
+      "role_mention": "@everyone",
+      "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! ⚠️ Do NOT solo march or attack — always rally up so everyone gets the first occupancy rewards.",
+      "minutes_before": 30,
+      "timezone": "UTC",
+      "extra_vars": {},
+      "schedule": {
+        "type": "one_off",
+        "date": "2026-05-08",
+        "time": "13:30"
+      }
+    },
+
+    {
+      "_comment": "Sanctuary — ONE-OFF 5 min warning, event at 14:00 UTC on 2026-05-08",
+      "id": "sanctuary_oneoff_5min_may08_14",
+      "name": "Sanctuary",
+      "enabled": true,
+      "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
+      "role_mention": "@everyone",
+      "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! ⚠️ Do NOT solo march or attack — always rally up so everyone gets the first occupancy rewards.",
+      "minutes_before": 5,
+      "timezone": "UTC",
+      "extra_vars": {},
+      "schedule": {
+        "type": "one_off",
+        "date": "2026-05-08",
+        "time": "13:55"
+      }
+    },
+
+    {
+      "_comment": "Sanctuary — ONE-OFF 30 min warning, event at 17:00 UTC on 2026-05-08",
+      "id": "sanctuary_oneoff_30min_may08_17",
+      "name": "Sanctuary",
+      "enabled": true,
+      "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
+      "role_mention": "@everyone",
+      "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! ⚠️ Do NOT solo march or attack — always rally up so everyone gets the first occupancy rewards.",
+      "minutes_before": 30,
+      "timezone": "UTC",
+      "extra_vars": {},
+      "schedule": {
+        "type": "one_off",
+        "date": "2026-05-08",
+        "time": "16:30"
+      }
+    },
+
+    {
+      "_comment": "Sanctuary — ONE-OFF 5 min warning, event at 17:00 UTC on 2026-05-08",
+      "id": "sanctuary_oneoff_5min_may08_17",
+      "name": "Sanctuary",
+      "enabled": true,
+      "webhook_env": "DISCORD_GENERAL_WEBHOOK_URL",
+      "role_mention": "@everyone",
+      "message_template": "{role} **{event_name}** starts in {minutes_before} minutes! ⚠️ Do NOT solo march or attack — always rally up so everyone gets the first occupancy rewards.",
+      "minutes_before": 5,
+      "timezone": "UTC",
+      "extra_vars": {},
+      "schedule": {
+        "type": "one_off",
+        "date": "2026-05-08",
+        "time": "16:55"
+      }
+    },
+
+    {
       "_comment": "Arena — 30 min warning before 00:00 UTC daily reset",
       "id": "arena",
       "name": "Arena",
